@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { executeQuery } from '../services/DatabaseService';
 import { useDatabaseContext } from '../context/DatabaseContext';
-import { Database, Clipboard, Copy, Download } from 'lucide-react';
+import { Database,Copy, Download } from 'lucide-react';
 
 interface QueryResult {
   success: boolean;
