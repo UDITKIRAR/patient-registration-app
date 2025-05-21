@@ -64,20 +64,28 @@ const PatientSearchBar = ({
         />
       </div>
       <div className="flex gap-4 flex-wrap">
-        <button className="btn btn-primary" onClick={onSearch}>
-          Search
-        </button>
-        <button className="btn btn-outline" onClick={onClear}>
-          Clear
-        </button>
-        <button
-          className="btn btn-secondary flex items-center disabled:opacity-50 disabled:cursor-not-allowed"
-          onClick={onExport}
-          disabled={disableExport}
-        >
-          <Download className="h-4 w-4 mr-1" /> Export
-        </button>
-      </div>
+  <button
+    className="btn btn-outline px-5 py-2 rounded-md font-semibold border text-white bg-blue-500 border-gray-400 text-gray-700 hover:bg-blue-400 transition"
+    onClick={onSearch}
+  >
+    Search
+  </button>
+  <button
+    className="btn btn-outline px-5 py-2 rounded-md font-semibold border border-gray-400 text-gray-700 hover:bg-gray-100 transition"
+    onClick={onClear}
+  >
+    Clear
+  </button>
+  <button
+    className="btn btn-secondary flex items-center px-5 py-2 rounded-md font-semibold bg-purple-600 text-white hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed transition"
+    onClick={onExport}
+    disabled={disableExport}
+  >
+    <Download className="h-4 w-4 mr-2" />
+    Export
+  </button>
+</div>
+
     </div>
   </div>
 );
