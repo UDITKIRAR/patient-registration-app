@@ -9,33 +9,19 @@
 git clone https://github.com/UDITKIRAR/patient-registration-app.git
 cd patient-registration-app
 2. Install dependencies
-bash
-Copy
-Edit
 npm install
 3. Run the development server
-bash
-Copy
-Edit
 npm run dev
 This will start the app locally, usually at http://localhost:5173.
 
 4. Build for production
-bash
-Copy
-Edit
 npm run build
 5. Preview production build locally
-bash
-Copy
-Edit
 npm run preview
 Usage Instructions
 Open the app in your browser at the app URL or your local development server.
 
 Use the navigation bar to access:
-
-Dashboard: Overview and summary of patient data.
 
 Patient Registration: Add new patient records.
 
