@@ -1,56 +1,57 @@
-Patient Registration App
-Setup Instructions
-Clone the repository
-
-bash
+ChatGPT said:
+markdown
 Copy
 Edit
+# Patient Registration App
+
+## Setup Instructions
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/UDITKIRAR/patient-registration-app.git
 cd patient-registration-app
-Install dependencies
-
+2. Install dependencies
 bash
 Copy
 Edit
 npm install
-Run the development server
-
+3. Run the development server
 bash
 Copy
 Edit
 npm run dev
 This will start the app locally, usually at http://localhost:5173.
 
-Build for production
-
+4. Build for production
 bash
 Copy
 Edit
 npm run build
-Preview production build locally
-
+5. Preview production build locally
 bash
 Copy
 Edit
 npm run preview
 Usage Instructions
-Visit the app URL or run locally.
+Open the app in your browser at the app URL or your local development server.
 
 Use the navigation bar to access:
 
-Dashboard: Overview and summary.
+Dashboard: Overview and summary of patient data.
 
 Patient Registration: Add new patient records.
 
-Patient Query: Search for patient data.
+Patient Query: Search existing patient data.
 
 Patient List: View and manage all patients.
 
-Export patient data using the export button in the patient list or query pages.
+Export patient data using the Export button available on the Patient List and Patient Query pages.
 
-All data is synchronized with the local database powered by Electric SQL PGLite.
+All patient data is synchronized with the local database powered by Electric SQL PGLite.
 
 Deployment
 The app is deployed publicly at:
+
 https://your-deployment-url.vercel.app
 (Replace with your actual deployed URL)
