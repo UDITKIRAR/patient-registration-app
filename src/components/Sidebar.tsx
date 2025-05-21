@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { X, Home, UserPlus, Search, Users, Database } from 'lucide-react';
+import { X, UserPlus, Search, Users } from 'lucide-react';
 
 interface SidebarProps {
   open: boolean;

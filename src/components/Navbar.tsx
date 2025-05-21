@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Activity } from 'lucide-react';
+import { Menu, Database } from 'lucide-react';
 
 interface NavbarProps {
   onMenuClick: () => void;
@@ -31,10 +31,12 @@ const Navbar: React.FC<NavbarProps> = ({ onMenuClick }) => {
             <div className="ml-3 relative">
               <div className="flex items-center">
                 <div className="h-8 w-8 rounded-full bg-primary-600 flex items-center justify-center text-white font-medium">
-                  
                 </div>
                 <span className="ml-2 text-sm font-medium text-gray-700 hidden md:block">
-                  PGLite DB
+                 <div className='flex gap-1'>
+                     <Database></Database>
+                      PGLite DB
+                </div>
                 </span>
               </div>
             </div>
