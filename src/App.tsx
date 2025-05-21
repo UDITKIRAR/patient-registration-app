@@ -1,15 +1,26 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import PatientRegistration from './pages/PatientRegistration';
+import PatientQuery from './pages/PatientQuery';
+import PatientList from './pages/PatientList';
+import { DatabaseProvider } from './context/DatabaseContext';
+import WelcomePage from './pages/Welcome';
 
 function App() {
- 
-
   return (
-    <>
-     <div className="text-3xl font-bold text-indigo-600 p-5">
-      Hello, Tailwind CSS + Vite plugin!
-    </div>  
-    </>
-  )
+    <DatabaseProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<WelcomePage />} />
+            <Route  path="register" element={<PatientRegistration />} />
+            <Route path="query" element={<PatientQuery />} />
+            <Route path="patients" element={<PatientList />} />
+          </Route>
+        </Routes>
+      </Router>
+    </DatabaseProvider>
+  );
 }
 
-export default App
+export default App;
