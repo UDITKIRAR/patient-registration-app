@@ -35,6 +35,4 @@ All patient data is synchronized with the local database powered by Electric SQL
 
 Deployment
 The app is deployed publicly at:
-
-https://your-deployment-url.vercel.app
-(Replace with your actual deployed URL)
+DEPLOY_LINK[(https://patient-registration-9ni7rwany-uditkirars-projects.vercel.app/)]
