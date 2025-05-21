@@ -1,7 +1,4 @@
-ChatGPT said:
-markdown
-Copy
-Edit
+
 # Patient Registration App
 
 ## Setup Instructions
