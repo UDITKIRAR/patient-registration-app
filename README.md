@@ -1,54 +1,56 @@
-# React + TypeScript + Vite
+Patient Registration App
+Setup Instructions
+Clone the repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+bash
+Copy
+Edit
+git clone https://github.com/UDITKIRAR/patient-registration-app.git
+cd patient-registration-app
+Install dependencies
 
-Currently, two official plugins are available:
+bash
+Copy
+Edit
+npm install
+Run the development server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy
+Edit
+npm run dev
+This will start the app locally, usually at http://localhost:5173.
 
-## Expanding the ESLint configuration
+Build for production
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+bash
+Copy
+Edit
+npm run build
+Preview production build locally
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+bash
+Copy
+Edit
+npm run preview
+Usage Instructions
+Visit the app URL or run locally.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Use the navigation bar to access:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Dashboard: Overview and summary.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Patient Registration: Add new patient records.
+
+Patient Query: Search for patient data.
+
+Patient List: View and manage all patients.
+
+Export patient data using the export button in the patient list or query pages.
+
+All data is synchronized with the local database powered by Electric SQL PGLite.
+
+Deployment
+The app is deployed publicly at:
+https://your-deployment-url.vercel.app
+(Replace with your actual deployed URL)
