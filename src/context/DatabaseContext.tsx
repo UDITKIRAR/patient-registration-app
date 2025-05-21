@@ -7,6 +7,7 @@ type DatabaseContextType = {
   error: string | null;
 };
 
+
 const DatabaseContext = createContext<DatabaseContextType>({
   isLoading: true,
   isInitialized: false,
